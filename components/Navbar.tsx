@@ -13,7 +13,6 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import React from "react";
 import { Database } from "@/types/supabase";
-import ClientSideCredits from "./realtime/ClientSideCredits";
 
 export const dynamic = "force-dynamic";
 
@@ -59,9 +58,9 @@ export default async function Navbar() {
         )}
         {user && (
           <div className="flex flex-row gap-4 text-center align-middle justify-center">
-            {stripeIsConfigured && (
+            {/* {stripeIsConfigured && (
               <ClientSideCredits creditsRow={credits ? credits : null} />
-            )}
+            )} */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild className="cursor-pointer">
                 <AvatarIcon height={24} width={24} className="text-primary" />
