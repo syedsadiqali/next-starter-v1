@@ -14,17 +14,10 @@ export default function Footer() {
         powered by{" "}
         <Link
           className="text-blue-600 hover:underline font-bold"
-          href="https://tryleap.ai/"
-          target="_blank"
-        >
-          Leap AI,{" "}
-        </Link>
-        <Link
-          className="text-blue-600 hover:underline font-bold"
           href="https://supabase.com/"
           target="_blank"
         >
-          Supabase,{" "}
+          Supabase
         </Link>
         and{" "}
         {process.env.DEPLOYMENT_PROVIDER === "replit" ? (
